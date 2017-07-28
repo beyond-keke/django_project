@@ -1,0 +1,24 @@
+{% extends 'title.html' %}
+
+{% block mainbody %}
+	{% if error %}
+		<p style="color: red;" align="center">哦偶！可能提交的信息有误，请按照要求填写！</p>
+	{% endif %}
+    <form action="" method="get" onSubmit="return check();">
+		<table align="center">
+	  		<tr>
+				<td><input type="text" name="username" id="name" maxlength="20" onkeyup="checkLength(this)" placeholder="username" /></td>
+			</tr>
+		</table>
+		<table align="center">
+	  		<tr>
+				<td><input type="email" name="email" id="email" placeholder="email" /></td>
+			</tr>
+		</table>
+		<table align="center">
+	  		<tr>
+				<td><p><input type="submit" value="提交" /></p></td>
+			</tr>
+		</table>			
+    </form>
+{% endblock %}

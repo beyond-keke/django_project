@@ -1,0 +1,29 @@
+{% extends 'title.html' %}
+
+
+
+{% block mainbody %}
+<h1 align="center">账号登录</h1>
+	<p align="center">请使用账号密码登录，如果您还没有账号，请点击 <a href="/hello/">立即注册</a></p>
+  <div class="login-form">
+    <form action="/hello/" method="post">
+		<table align="center">
+	  		<tr>
+				<td>账号:</td><td><input type="text" name="username" placeholder="username"/></td>
+			</tr>
+		</table>
+		<table align="center">
+	  		<tr>
+				<td>密码:</td><td><input type="password" name="password" placeholder="password"/></td>
+			</tr>
+		</table>
+		<table align="center">
+	  		<tr>
+				<td><p><input type="submit" value="登录"></p></td>
+			</tr>
+		</table>
+    </form>
+    <p align="center"><a href="/hello/">Forgotten your password?</a></p>
+  </div>
+{% endblock %}
+	

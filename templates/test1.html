@@ -1,0 +1,22 @@
+<script type="text/javascript">
+function check() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    if(!/^[a-z]+$/i.test(name)) {
+        alert("姓名中只能包含英文字母\n请重新输入");
+    }
+    else if(!/^\d{7}(\d{1}(\d{3}(\d{1})?)?)?$/.test(phone)) {
+        alert("电话号码必须为数字且长度为 7,8,11或12位" +
+            "\n请重新输入");
+    }
+    else {
+        alert("正确");
+    }
+}
+</script>
+1
+2
+3
+姓名：<input type="text" name="name" id="name" value="" />
+电话：<input type="text" name="phone" id="phone" value="" />
+<input type="button" onclick="check()" value="验证" />

@@ -1,0 +1,18 @@
+{% extends 'title.html' %}
+
+{% block title %}
+datalist tset!
+{% endblock %}
+
+{% block mainbody %}
+<form action="#">
+	<fieldset>
+		<legend>请输入职业</legend>
+		<input type="text" list="worklist">
+		<datalist id="worklist">
+			<option value="程序员"></option>
+			<option value="架构师"></option>
+		</datalist>
+	</fieldset>
+</form>
+{% endblock %}

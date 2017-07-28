@@ -1,0 +1,14 @@
+{% extends 'title.html' %}
+
+{% block title %}
+contenteditable test.
+{% endblock %}
+
+{% block mainbody %}
+<h1>对下列内容进行编辑内容</h1>
+<ol contenteditable="true">
+	<li>列表一</li>
+	<li>列表二</li>
+	<li>列表三</li>
+</ol>
+{% endblock %}
