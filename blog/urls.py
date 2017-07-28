@@ -20,4 +20,5 @@ from blog_app.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^search/$', search),
+    url(r'^login/$', login),
 ]
