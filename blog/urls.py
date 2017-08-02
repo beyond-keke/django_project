@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^search/$', search),
     url(r'^login/$', login),
     url(r'^request_values/$', request_values),
+    url(r'^images/$', images),
 ]

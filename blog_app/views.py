@@ -49,10 +49,9 @@ def request_values(request):
                 html.append('<tr><td>%s</td><td>%s</td></tr>' % (k, v))
     return HttpResponse('<table border="1">%s</table>' % '\n'.join(html))
 
-#===============================================================================
-# def search_form(request):
-#     return render_to_response('search_form.html')
-#===============================================================================
+def my_image(request):
+    image_data = open("/usr/local/webserver/nginx/conf/django_project/statics/images/logo.jpg", "rb").read()
+    return HttpResponse(image_data, mimetype="image/png")
 
 def search(request):
     html = []
