@@ -4,7 +4,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-from django.shortcuts import render,render_to_response,render_to_response
+from django.shortcuts import render,render_to_response,render_to_response,HttpResponse
 from django.http import HttpResponse
 
 # Create your views here.
@@ -51,7 +51,7 @@ def request_values(request):
 
 def images(request):
     image_data = open("/usr/local/webserver/nginx/conf/django_project/statics/images/logo.jpg", "rb").read()
-    return HttpResponse(image_data, mimetype="image/png")
+    return HttpResponse(image_data, mimetypes="image/png")
 
 def search(request):
     html = []
