@@ -25,9 +25,8 @@ def test2(request):
     context = {}
     return render(request, 'test2.html', context)
 
-def test3(request):
-    context = {}
-    return render(request, 'test3.html', context)
+def b_strap(request):
+    return HttpResponse(request, 'b_strap.html')
 
 def url_view(request):
     values = request.META.items()

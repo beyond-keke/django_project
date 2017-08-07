@@ -21,6 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^search/$', search),
     url(r'^login/$', login),
-    url(r'^request_values/$', request_values),
-    url(r'^images/$', images),
+    url(r'^bstrap/$', bstrap),
 ]
